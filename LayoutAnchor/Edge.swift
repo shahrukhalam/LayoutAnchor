@@ -1,5 +1,12 @@
 import UIKit
 
+public enum Edge {
+    case top
+    case bottom
+    case leading
+    case trailing
+}
+
 public enum XEdge {
     case leading
     case trailing

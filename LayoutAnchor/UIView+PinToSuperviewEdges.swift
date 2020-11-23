@@ -34,18 +34,7 @@ public extension UIView {
             preconditionFailure("view has no superview")
         }
 
-        translatesAutoresizingMaskIntoConstraints = false
-
-        let constraint = NSLayoutConstraint(item: self,
-                                            attribute: .top,
-                                            relatedBy: relation,
-                                            toItem: superview,
-                                            attribute: .top,
-                                            multiplier: 1,
-                                            constant: constant)
-        constraint.priority = priority
-        superview.addConstraint(constraint)
-        return constraint
+        return pinTop(to: superview, constant: constant, priority: priority, relatedBy: relation)
     }
 
     @discardableResult func pinToSuperviewBottom(
@@ -57,18 +46,7 @@ public extension UIView {
             preconditionFailure("view has no superview")
         }
 
-        translatesAutoresizingMaskIntoConstraints = false
-
-        let constraint = NSLayoutConstraint(item: superview,
-                                            attribute: .bottom,
-                                            relatedBy: relation,
-                                            toItem: self,
-                                            attribute: .bottom,
-                                            multiplier: 1,
-                                            constant: constant)
-        constraint.priority = priority
-        superview.addConstraint(constraint)
-        return constraint
+        return pinBottom(to: superview, constant: constant, priority: priority, relatedBy: relation)
     }
 
     @discardableResult func pinToSuperviewLeading(
@@ -80,18 +58,7 @@ public extension UIView {
             preconditionFailure("view has no superview")
         }
 
-        translatesAutoresizingMaskIntoConstraints = false
-
-        let constraint = NSLayoutConstraint(item: self,
-                                            attribute: .leading,
-                                            relatedBy: relation,
-                                            toItem: superview,
-                                            attribute: .leading,
-                                            multiplier: 1,
-                                            constant: constant)
-        constraint.priority = priority
-        superview.addConstraint(constraint)
-        return constraint
+        return pinLeading(to: superview, constant: constant, priority: priority, relatedBy: relation)
     }
 
     @discardableResult func pinToSuperviewTrailing(
@@ -103,17 +70,6 @@ public extension UIView {
             preconditionFailure("view has no superview")
         }
 
-        translatesAutoresizingMaskIntoConstraints = false
-
-        let constraint = NSLayoutConstraint(item: superview,
-                                            attribute: .trailing,
-                                            relatedBy: relation,
-                                            toItem: self,
-                                            attribute: .trailing,
-                                            multiplier: 1,
-                                            constant: constant)
-        constraint.priority = priority
-        superview.addConstraint(constraint)
-        return constraint
+        return pinTrailing(to: superview, constant: constant, priority: priority, relatedBy: relation)
     }
 }
