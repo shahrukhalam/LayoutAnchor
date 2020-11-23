@@ -37,7 +37,7 @@ class PinToViewEdgeTests: XCTestCase {
         view2.pin(edge: .leading, to: .trailing, of: view)
         view2.pinToSuperview(edges: [.top, .trailing, .bottom])
 
-        view.widthConstraint(constant: 150)
+        view.width(constant: 150)
 
         updateFrames()
 
@@ -53,7 +53,7 @@ class PinToViewEdgeTests: XCTestCase {
         view2.pin(edge: .leading, to: .trailing, of: view)
         view2.pinTrailing(to: superview)
 
-        view.widthConstraint(constant: 100)
+        view.width(constant: 100)
 
         updateFrames()
 
@@ -69,7 +69,7 @@ class PinToViewEdgeTests: XCTestCase {
         view2.pinBottom(to: superview)
         view2.pinTrailing(to: view)
 
-        view.heightConstraint(constant: 150)
+        view.height(constant: 150)
 
         updateFrames()
 
@@ -80,10 +80,10 @@ class PinToViewEdgeTests: XCTestCase {
     func testThatViewCanBePinnedHorizontallyCentered() {
         view.pinToSuperview(edges: [.top, .leading, .trailing])
         view3.pinTop(to: view, constant: 20)
-        view3.heightConstraint(constant: 50)
-        view3.widthConstraint(constant: 50)
+        view3.height(constant: 50)
+        view3.width(constant: 50)
         view3.pinCenterX(to: view)
-        view.heightConstraint(constant: 150)
+        view.height(constant: 150)
 
         updateFrames()
 
@@ -92,10 +92,10 @@ class PinToViewEdgeTests: XCTestCase {
 
     func testThatViewCanBePinnedVerticallyCentered() {
         view.pinToSuperview(edges: [.top, .leading, .trailing])
-        view3.heightConstraint(constant: 50)
-        view3.widthConstraint(constant: 50)
+        view3.height(constant: 50)
+        view3.width(constant: 50)
         view3.pinCenterY(to: view)
-        view.heightConstraint(constant: 150)
+        view.height(constant: 150)
 
         updateFrames()
 

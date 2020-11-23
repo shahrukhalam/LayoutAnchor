@@ -115,15 +115,15 @@ extension UIView {
         return constraint
     }
     
-    @discardableResult public func widthConstraint(constant: CGFloat = 0,
-                                                   priority: UILayoutPriority = .required,
-                                                   relatedBy relation: NSLayoutConstraint.Relation = .equal) -> NSLayoutConstraint {
+    @discardableResult public func width(constant: CGFloat = 0,
+                                         priority: UILayoutPriority = .required,
+                                         relatedBy relation: NSLayoutConstraint.Relation = .equal) -> NSLayoutConstraint {
         return constraint(dimension: .width, constant: constant, priority: priority, relatedBy: relation)
     }
     
-    @discardableResult public func heightConstraint(constant: CGFloat = 0,
-                                                    priority: UILayoutPriority = .required,
-                                                    relatedBy relation: NSLayoutConstraint.Relation = .equal) -> NSLayoutConstraint {
+    @discardableResult public func height(constant: CGFloat = 0,
+                                          priority: UILayoutPriority = .required,
+                                          relatedBy relation: NSLayoutConstraint.Relation = .equal) -> NSLayoutConstraint {
         return constraint(dimension: .height, constant: constant, priority: priority, relatedBy: relation)
     }
     
@@ -151,7 +151,7 @@ extension UIView {
         return constraint
     }
     
-    @discardableResult public func aspectRatioConstraint(_ aspectRatio: CGFloat)
+    @discardableResult public func aspectRatio(_ aspectRatio: CGFloat)
     -> NSLayoutConstraint {
         translatesAutoresizingMaskIntoConstraints = false
         let anchor = Dimension.width.anchor(for: self)
@@ -211,9 +211,9 @@ extension UIView {
         return constraint
     }
     
-    public func addSizeConstraint(size: CGSize) {
-        widthConstraint(constant: size.width)
-        heightConstraint(constant: size.height)
+    public func size(size: CGSize) {
+        width(constant: size.width)
+        height(constant: size.height)
     }
     
     public func pinCenter(to view: UIView,
