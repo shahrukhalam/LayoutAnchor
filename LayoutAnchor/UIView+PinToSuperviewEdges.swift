@@ -46,7 +46,7 @@ public extension UIView {
             preconditionFailure("view has no superview")
         }
 
-        return pinBottom(to: superview, constant: constant, priority: priority, relatedBy: relation)
+        return pinBottom(to: superview, constant: -constant, priority: priority, relatedBy: relation)
     }
 
     @discardableResult func pinToSuperviewLeading(
@@ -70,6 +70,6 @@ public extension UIView {
             preconditionFailure("view has no superview")
         }
 
-        return pinTrailing(to: superview, constant: constant, priority: priority, relatedBy: relation)
+        return pinTrailing(to: superview, constant: -constant, priority: priority, relatedBy: relation)
     }
 }

@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		01DE8B9A256C21870029A879 /* LayoutAnchor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01DE8B90256C21870029A879 /* LayoutAnchor.framework */; };
-		01DE8B9F256C21870029A879 /* LayoutAnchorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE8B9E256C21870029A879 /* LayoutAnchorTests.swift */; };
 		01DE8BA1256C21870029A879 /* LayoutAnchor.h in Headers */ = {isa = PBXBuildFile; fileRef = 01DE8B93256C21870029A879 /* LayoutAnchor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		01DE8BAF256C21AE0029A879 /* UIView+PinToSuperviewEdges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE8BAC256C21AE0029A879 /* UIView+PinToSuperviewEdges.swift */; };
 		01DE8BB0256C21AE0029A879 /* UIView+PinToViewEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE8BAD256C21AE0029A879 /* UIView+PinToViewEdge.swift */; };
 		01DE8BB1256C21AE0029A879 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE8BAE256C21AE0029A879 /* Edge.swift */; };
+		01DE8BB8256C34740029A879 /* UIView+PinToViewEdgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE8BB6256C34740029A879 /* UIView+PinToViewEdgeTests.swift */; };
+		01DE8BB9256C34740029A879 /* UIView+PinToSuperviewEdgesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE8BB7256C34740029A879 /* UIView+PinToSuperviewEdgesTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,11 +31,12 @@
 		01DE8B93256C21870029A879 /* LayoutAnchor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayoutAnchor.h; sourceTree = "<group>"; };
 		01DE8B94256C21870029A879 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01DE8B99256C21870029A879 /* LayoutAnchorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LayoutAnchorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		01DE8B9E256C21870029A879 /* LayoutAnchorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutAnchorTests.swift; sourceTree = "<group>"; };
 		01DE8BA0256C21870029A879 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01DE8BAC256C21AE0029A879 /* UIView+PinToSuperviewEdges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+PinToSuperviewEdges.swift"; sourceTree = "<group>"; };
 		01DE8BAD256C21AE0029A879 /* UIView+PinToViewEdge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+PinToViewEdge.swift"; sourceTree = "<group>"; };
 		01DE8BAE256C21AE0029A879 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		01DE8BB6256C34740029A879 /* UIView+PinToViewEdgeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+PinToViewEdgeTests.swift"; sourceTree = "<group>"; };
+		01DE8BB7256C34740029A879 /* UIView+PinToSuperviewEdgesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+PinToSuperviewEdgesTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +91,8 @@
 		01DE8B9D256C21870029A879 /* LayoutAnchorTests */ = {
 			isa = PBXGroup;
 			children = (
-				01DE8B9E256C21870029A879 /* LayoutAnchorTests.swift */,
+				01DE8BB6256C34740029A879 /* UIView+PinToViewEdgeTests.swift */,
+				01DE8BB7256C34740029A879 /* UIView+PinToSuperviewEdgesTests.swift */,
 				01DE8BA0256C21870029A879 /* Info.plist */,
 			);
 			path = LayoutAnchorTests;
@@ -214,7 +217,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01DE8B9F256C21870029A879 /* LayoutAnchorTests.swift in Sources */,
+				01DE8BB9256C34740029A879 /* UIView+PinToSuperviewEdgesTests.swift in Sources */,
+				01DE8BB8256C34740029A879 /* UIView+PinToViewEdgeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
