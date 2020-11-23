@@ -10,6 +10,9 @@
 		01DE8B9A256C21870029A879 /* LayoutAnchor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01DE8B90256C21870029A879 /* LayoutAnchor.framework */; };
 		01DE8B9F256C21870029A879 /* LayoutAnchorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE8B9E256C21870029A879 /* LayoutAnchorTests.swift */; };
 		01DE8BA1256C21870029A879 /* LayoutAnchor.h in Headers */ = {isa = PBXBuildFile; fileRef = 01DE8B93256C21870029A879 /* LayoutAnchor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01DE8BAF256C21AE0029A879 /* UIView+PinToSuperviewEdges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE8BAC256C21AE0029A879 /* UIView+PinToSuperviewEdges.swift */; };
+		01DE8BB0256C21AE0029A879 /* UIView+PinToViewEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE8BAD256C21AE0029A879 /* UIView+PinToViewEdge.swift */; };
+		01DE8BB1256C21AE0029A879 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE8BAE256C21AE0029A879 /* Edge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		01DE8B99256C21870029A879 /* LayoutAnchorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LayoutAnchorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01DE8B9E256C21870029A879 /* LayoutAnchorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutAnchorTests.swift; sourceTree = "<group>"; };
 		01DE8BA0256C21870029A879 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01DE8BAC256C21AE0029A879 /* UIView+PinToSuperviewEdges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+PinToSuperviewEdges.swift"; sourceTree = "<group>"; };
+		01DE8BAD256C21AE0029A879 /* UIView+PinToViewEdge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+PinToViewEdge.swift"; sourceTree = "<group>"; };
+		01DE8BAE256C21AE0029A879 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,9 @@
 		01DE8B92256C21870029A879 /* LayoutAnchor */ = {
 			isa = PBXGroup;
 			children = (
+				01DE8BAE256C21AE0029A879 /* Edge.swift */,
+				01DE8BAD256C21AE0029A879 /* UIView+PinToViewEdge.swift */,
+				01DE8BAC256C21AE0029A879 /* UIView+PinToSuperviewEdges.swift */,
 				01DE8B93256C21870029A879 /* LayoutAnchor.h */,
 				01DE8B94256C21870029A879 /* Info.plist */,
 			);
@@ -147,6 +156,7 @@
 				TargetAttributes = {
 					01DE8B8F256C21870029A879 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					01DE8B98256C21870029A879 = {
 						CreatedOnToolsVersion = 12.2;
@@ -194,6 +204,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01DE8BAF256C21AE0029A879 /* UIView+PinToSuperviewEdges.swift in Sources */,
+				01DE8BB0256C21AE0029A879 /* UIView+PinToViewEdge.swift in Sources */,
+				01DE8BB1256C21AE0029A879 /* Edge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +354,7 @@
 		01DE8BA5256C21870029A879 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 565GS4VPDB;
@@ -357,6 +371,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Shahrukh.LayoutAnchor;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +380,7 @@
 		01DE8BA6256C21870029A879 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 565GS4VPDB;
@@ -389,6 +405,7 @@
 		01DE8BA8256C21870029A879 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 565GS4VPDB;
 				INFOPLIST_FILE = LayoutAnchorTests/Info.plist;
@@ -407,6 +424,7 @@
 		01DE8BA9256C21870029A879 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 565GS4VPDB;
 				INFOPLIST_FILE = LayoutAnchorTests/Info.plist;
