@@ -2,8 +2,17 @@
 This is just a Helper Framework for easy auto-layout using Anchors.
 
 ## Features:
-✅ Uses Anchor in place of old school NSLayoutConstraint   
+✅ Uses Anchor in place of old school NSLayoutConstraint  
+
 ✅ Unit Tested
+
+**Semantic:** Let's You focus on your beautiful App idea, not the math behind Auto Layout Constraints
+
+**Powerful:** Create multiple constraints with a single line of code
+
+**Type Safe:** Takes care of Matching Anchors
+
+**Expressive, Clear & Easy to use:** As easy as day-to-day English conversation
 
 ## How to use:
 
